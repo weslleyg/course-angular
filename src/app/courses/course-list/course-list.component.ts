@@ -19,9 +19,9 @@ export class CourseListComponent implements OnInit {
         name: "Angular: forms",
         imageUrl: "",
         price: 199.99,
-        code: "XPS-8796",
+        code: "XPS-879",
         duration: 120,
-        rating: 5.4,
+        rating: 4.5,
         releaseDate: "September, 17, 1099",
       },
       {
@@ -31,7 +31,7 @@ export class CourseListComponent implements OnInit {
         price: 399,
         code: "XTZ-660",
         duration: 720,
-        rating: 9,
+        rating: 3.9,
         releaseDate: "November, 20, 1992",
       }
     ]

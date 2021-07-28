@@ -11,6 +11,15 @@ interface ICourse {
 
 export class Course {
 
+  id: number;
+  name: string;
+  imageUrl: string;
+  price: number;
+  code: string;
+  duration: number;
+  rating: number;
+  releaseDate: string;
+
   constructor({id, name, imageUrl, price, duration, code, rating, releaseDate}: ICourse) {
     this.id = id;
     this.name = name;
@@ -21,13 +30,4 @@ export class Course {
     this.rating = rating;
     this.releaseDate = releaseDate;
   }
-
-  id: number;
-  name: string;
-  imageUrl: string;
-  price: number;
-  code: string;
-  duration: number;
-  rating: number;
-  releaseDate: string;
 }
