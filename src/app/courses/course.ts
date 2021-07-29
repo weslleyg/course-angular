@@ -1,6 +1,7 @@
 interface ICourse {
   id: number;
   name: string;
+  description: string;
   imageUrl: string;
   price: number;
   code: string;
@@ -13,6 +14,7 @@ export class Course {
 
   id: number;
   name: string;
+  description: string;
   imageUrl: string;
   price: number;
   code: string;
@@ -20,9 +22,10 @@ export class Course {
   rating: number;
   releaseDate: string;
 
-  constructor({id, name, imageUrl, price, duration, code, rating, releaseDate}: ICourse) {
+  constructor({id, name, description, imageUrl, price, duration, code, rating, releaseDate}: ICourse) {
     this.id = id;
     this.name = name;
+    this.description = description;
     this.imageUrl = imageUrl;
     this.price = price;
     this.code = code;

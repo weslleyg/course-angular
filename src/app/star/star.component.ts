@@ -10,7 +10,7 @@ export class StarComponent implements OnChanges {
   @Input()
   rating: number = 0;
 
-  starWidth: number | undefined;
+  starWidth!: number;
 
   constructor() {
   }
