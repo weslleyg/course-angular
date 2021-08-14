@@ -5,14 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { NotFoundComponent } from './not-found/not-found.component';
 import { CourseModule } from './courses/course.module';
 import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NotFoundComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +23,6 @@ import { CoreModule } from './core/core.module';
         redirectTo: "courses",
         pathMatch: "full"
       },
-      {
-        path: "**", component: NotFoundComponent
-      }
     ]),
     FormsModule,
   ],
