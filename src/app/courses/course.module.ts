@@ -1,14 +1,22 @@
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
+import { ReplacePipe } from "../pipe/replace.pipe";
+import { StarComponent } from "../star/star.component";
 import { CourseInfoComponent } from "./course-info/course-info.component";
 import { CourseListComponent } from "./course-list/course-list.component";
 
 @NgModule({
   declarations: [
     CourseListComponent,
-    CourseInfoComponent
+    CourseInfoComponent,
+    ReplacePipe,
+    StarComponent,
   ],
   imports: [
+    FormsModule,
+    CommonModule,
     RouterModule.forChild([
       {
         path: "courses",
