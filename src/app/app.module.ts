@@ -7,18 +7,18 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CourseModule } from './courses/course.module';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     CourseModule,
+    CoreModule,
     RouterModule.forRoot([
       {
         path: "",

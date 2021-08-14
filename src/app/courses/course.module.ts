@@ -2,8 +2,8 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
-import { ReplacePipe } from "../pipe/replace.pipe";
-import { StarComponent } from "../star/star.component";
+import { StarModule } from "../shared/components/star/star.module";
+import { AppPipeModule } from "../shared/pipes/app-pipe.module";
 import { CourseInfoComponent } from "./course-info/course-info.component";
 import { CourseListComponent } from "./course-list/course-list.component";
 
@@ -11,12 +11,12 @@ import { CourseListComponent } from "./course-list/course-list.component";
   declarations: [
     CourseListComponent,
     CourseInfoComponent,
-    ReplacePipe,
-    StarComponent,
   ],
   imports: [
     FormsModule,
     CommonModule,
+    StarModule,
+    AppPipeModule,
     RouterModule.forChild([
       {
         path: "courses",
